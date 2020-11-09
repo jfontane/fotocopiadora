@@ -30,7 +30,6 @@ if ($targetUrl=="") $targetUrl="index"
 
 <div id="fb-root"></div>
   <div class="container">
-
     <div class="row justify-content-md-center">
       <div class="col">
         <div class="modal-dialog">

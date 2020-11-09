@@ -15,75 +15,94 @@ $paginaActivo='registrarme';
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="grid.css" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
 
   <?php
   include('nav.php');
   ?>
 
+  <span class="material-icons">
+games
+</span>
+
   <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col">
-        <div class="modal-dialog">
-          <div class="modal-content">
 
-            <form name="cliente_agregar" id="cliente_agregar" action="cliente_agregar.php" method="post" enctype="multipart/form-data">
-              <div class="modal-header">
-                <h4 class="modal-title">Registrarme</h4>
-              </div>
+    <div class="row">
+            <div class="col-lg-12">
+                                    <div class="card bg-light mb-12">
+                        <div class="card-header">Registro</div>
 
-              <div class="modal-body" id="idcuerpo">
-                <fieldset>
-                  <legend>Datos de la Cuenta de Usuario:</legend>
-                  <div class="form-group">
-                    <label>Email <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="email" name="email" id="email" class="form-control" maxlength="60" required>
-                  </div>
-                  <div class="form-group">
-                    <label>Contraseña <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="text" name="password" id="password" class="form-control" maxlength="20" required>
-                  </div>
-                  <div class="form-group">
-                    <label>Repetir Contraseña <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="text" name="password2" id="password2" class="form-control" maxlength="20" required>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <legend>Datos Personales</legend>
-                  <div class="form-group">
-                    <label>Apellido <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="text" name="apellido" id="apellido" class="form-control" maxlength="35" required>
-                  </div>
-                  <div class="form-group">
-                    <label>Nombre <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" maxlength="35" required>
-                  </div>
-                  <div class="form-group">
-                    <label>DNI <font color="red"><b>(Obligatorio)</b></font></label>
-                    <input type="text" name="dni" id="dni" maxlength="8" class="form-control">
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <legend>Datos Personales:</legend>
-                  <div class="form-group">
-                    <label>Telefono</label>
-                    <input type="text" name="telefono" id="telefono" class="form-control" maxlength="25">
-                  </div>
-                  <div class="form-group">
-                    <label>Direccion</label>
-                    <input type="text" name="direccion" id="direccion" class="form-control" maxlength="50">
-                  </div>
-                </fieldset>
-              </div>
-              <div class="modal-footer">
-                <input type="submit" class="btn btn-success" value="Guardar datos">
-              </div>
-            </form>
 
-          </div>
+                        <div class="card-body">
+
+                            <form>
+
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4"
+                                               placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                           placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                           placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                            </div>
         </div>
-      </div>
-    </div>
+
+
+  </div>
 
     <br>
     <div id="resultado" class="text-center"></div>

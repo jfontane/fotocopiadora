@@ -19,7 +19,7 @@ $paginaActivo='verCarrito';
   <!-- Fontawesome core CSS -->
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
   <!--GOOGLE FONT -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- custom CSS here -->
   <link href="assets/css/sstyle.css" rel="stylesheet" />
   <link href="grid.css" rel="stylesheet">
@@ -66,12 +66,14 @@ $paginaActivo='verCarrito';
                   <td  style="font-size: 12px;"><?php echo $item["name"]; ?></td>
                   <td class="text-right"  style="font-size: 12px;"><?php echo '$'.number_format($item["price"],2,'.',',').' '; ?></td>
                   <td style="padding-top: 0px;">
-  <input type="number" class="form-control text-center"  style="font-size: 12px;" value="<?php echo $item["qty"]; ?>" min="1" step="1"
-  onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')" style="float: right;width : 55px;padding-top: 1px;padding-bottom: 1px;padding-left: 5px;padding-right: 5px;height: 22px;">
+                    <button class="material-icons">remove</button>&nbsp;<?php echo $item["qty"]; ?>&nbsp;<span ></span>
+<!--  <input type="number" class="form-control text-center"  style="font-size: 12px;" value="<?php echo $item["qty"]; ?>" min="1" step="1"
+  onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')" style="float: right;width : 55px;padding-top: 1px;padding-bottom: 1px;padding-left: 5px;padding-right: 5px;height: 22px;"> -->
+                <button class="material-icons">add</button>
                   </td>
                     <td class="text-right"><?php echo '$'.number_format($item["subtotal"],2,'.',',').' '; ?>&nbsp;
                       <a href="accionCarrito.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" onclick="return confirm('Confirma eliminar?')" >
-                        <i class="fa fa-trash-alt">del</i>
+                        <span class="material-icons">delete_outline</span>
                       </a>
                     </td>
                   </tr>
