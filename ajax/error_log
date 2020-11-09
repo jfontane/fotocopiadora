@@ -1,0 +1,7 @@
+[09-Nov-2019 20:24:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:26:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:27:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:27:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:33:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:35:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
+[09-Nov-2019 20:37:22 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home7/mrlhofsr/public_html/ajax/promociones_listar.php on line 34
